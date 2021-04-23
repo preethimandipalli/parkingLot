@@ -18,5 +18,16 @@ public class TestParking {
 
         assertEquals(expected,actual);
     }
+    @Test
+    void TestToCheckIfCarIsUnParked(){
+        String registrationNumber = "TS1541";
+        Car car = new Car(registrationNumber,"parked");
+        String expected= "unParked";
+
+        parkingLot.remove(car);
+        String actual = car.status;
+
+        assertEquals(expected,actual);
+    }
 
 }

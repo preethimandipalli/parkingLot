@@ -11,4 +11,8 @@ public class ParkingLot {
             totalCapacity-=1;
         }
     }
+    public void remove(Car car){
+        car.status = "unParked";
+        totalCapacity +=1;
+    }
 }
